@@ -12,5 +12,5 @@ def index():
 def get_current_time():
     return {'time': time.time()}
 
-if __name__ == "__main__":
-     app.run(host='0.0.0.0', port=os.environ.get('PORT', 8080))
+if __name__ == '__main__':
+    flask_app.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))
