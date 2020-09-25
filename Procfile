@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT flaskapp:server.py
+web: gunicorn flaskapp:server.py
